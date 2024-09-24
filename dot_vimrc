@@ -1,0 +1,13 @@
+set nocompatible
+
+syntax on
+
+set number
+set relativenumber
+
+augroup numbertoggle
+	autocmd!
+	autocmd InsertEnter * set norelativenumber
+	autocmd InsertLeave * set relativenumber
+augroup END
+
