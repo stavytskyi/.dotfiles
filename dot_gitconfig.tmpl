@@ -1,0 +1,8 @@
+[user]
+	name = Maksym Stavytskyi
+	email = stavytskyi@gmail.com
+{{- if and (eq .chezmoi.os "linux") (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+# For using Windows Credential Manager in WSL2 for Git authentication - requires Git for Windows >= v2.39.0 installed on the host machine
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+{{- end }}
