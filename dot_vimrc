@@ -11,3 +11,8 @@ augroup numbertoggle
 	autocmd InsertLeave * set relativenumber
 augroup END
 
+call plug#begin('~/.vim/plugged')
+
+	Plug 'tpope/vim-sensible'
+
+call plug#end()
