@@ -14,5 +14,11 @@ augroup END
 call plug#begin('~/.vim/plugged')
 
 	Plug 'tpope/vim-sensible'
+	
+	"Git integration plugins
+	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-rhubarb'
+	Plug 'airblade/vim-gitgutter'
+	Plug 'junegunn/gv.vim'
 
 call plug#end()
