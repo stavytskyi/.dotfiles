@@ -13,12 +13,23 @@ augroup END
 
 call plug#begin('~/.vim/plugged')
 
+	"Essential plugins
 	Plug 'tpope/vim-sensible'
+
+	" File navigation plugins
+	Plug 'scrooloose/nerdtree'
 	
-	"Git integration plugins
+	" Git integration plugins
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-rhubarb'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'junegunn/gv.vim'
+
+	"Fuzzy finder
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+
+	"Wiki plugins
+	Plug 'vimwiki/vimwiki'
 
 call plug#end()
